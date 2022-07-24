@@ -5,6 +5,7 @@ import {
   NavBtn,
   NavBtnLink,
   NavLink,
+  Img,
   NavMenu,
 } from "./NavbarElements";
 
@@ -13,22 +14,24 @@ const Navbar = () => {
     <>
       <Nav>
         <NavLink to="/">
-          <h1>Logo</h1>
-          {/* <img src={require('../../images/logo.svg')} alt="logo" /> */}
+          <Img>
+            <img
+              width={75}
+              src={require("../../assets/photo1.jpeg")}
+              alt="logo"
+            />
+          </Img>
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/about" activeStyle>
-            About
+          <NavLink to="/sobre-nós" activeStyle>
+            Sobre nós
           </NavLink>
-          <NavLink to="/services" activeStyle>
-            Services
+          <NavLink to="/cardapio" activeStyle>
+            Cardápio
           </NavLink>
-          <NavLink to="/contact-us" activeStyle>
-            Contact us
-          </NavLink>
-          <NavLink to="/sign-up" activeStyle>
-            Sign Up
+          <NavLink to="/contato" activeStyle>
+            Entre em contato conosco
           </NavLink>
           {/* <NavBtnLink to="/signin">Sign In</NavBtnLink> */}
         </NavMenu>
