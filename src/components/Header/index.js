@@ -25,6 +25,12 @@ const Header = () => {
       <Slide>
         <img width={350} src={require("../../assets/photo2.jpeg")} alt="" />
       </Slide>
+      <Slide>
+        <img width={350} src={require("../../assets/photo2.jpeg")} alt="" />
+      </Slide>
+      <Slide>
+        <img width={350} src={require("../../assets/photo2.jpeg")} alt="" />
+      </Slide>
     </Slider>
   );
 };
